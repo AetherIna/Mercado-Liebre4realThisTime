@@ -1,22 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
+    background-color: #ebebeb;
+    ;
     font-family: Roboto;
 }
 
+/* -- Header -- */
+
 header {
-    background-color: #EAC926;;
+    background-color: #EAC926;
+    ;
 }
 
 header .text {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 10px 0 15px;
-    font-size: 12px;
 }
 
 header img {
-   display: flex;
-   justify-content: start;
-   align-items: start;
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .searchBar {
@@ -25,7 +36,7 @@ header img {
     padding: 20px;
 }
 
-.searchBar button{
+.searchBar button {
     background-color: #eaeaea;
     height: 42px;
     width: 45px;
@@ -47,6 +58,7 @@ header img {
 header .upperHeader {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 header .burguer-menu {
@@ -55,10 +67,10 @@ header .burguer-menu {
     font-size: 2em;
     align-items: center;
     color: #ebebeb;
-    background-color: #03264C;
-    margin: 0 235px;
-    border-radius: 5px;
-    height: 45px;
+    background-color: #1259c3;
+    margin: 35px 235px 35px;
+    border-radius: 7px;
+    height: 60px;
 }
 
 
@@ -66,3 +78,119 @@ header .nav-bar {
     display: none;
 }
 
+.title {
+    margin: 10px 0 0;
+    font-size: 24px;
+    color: #666;
+    text-align: center;
+}
+
+/* -- Main -- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+main .product .description p {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    width: 50vw;
+}
+
+main .product {
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    background-color: white;
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .product .description {
+    width: 90vw;
+    border-top: 1px solid #ebebeb;
+}
+
+main .product .description .prices {
+    display: flex;
+    align-content: center;
+    margin: 15px 0px;
+}
+
+main .product .description .descount {
+    width: 70%;
+    color: #39b54a;
+}
+
+main .product .price{
+    width: 30%;
+}
+
+main .product .description {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section .product i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+
+
+/* -- Footer -- */
+
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section {
+    margin: 20px 0;
+
+}
+
+footer .icon {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: #1259c3;
+}
+
+footer section h1 {
+    color: #666;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    margin: 0 115px;
+}
