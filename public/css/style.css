@@ -212,17 +212,25 @@ footer p {
     header .burguer-menu {
         display: none;
     }
+    header .nav-bar ul {
+        display: flex;
+        align-items: center;
+    }
+
+    header .nav-bar ul li {
+        padding: 4% 0;
+        margin: 0 20px;
+        list-style-type: none
+    }
 
     header .upperHeader {
         display: flex;
-        flex-direction: row;
+        align-items: center;
+
     }
 
     header .upperHeader .logo {
-        width: 150px;
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
+        width: 200px;
     }
 
     header .upperHeader .searchBar {
@@ -230,17 +238,14 @@ footer p {
         justify-content: center;
     }
 
-
-
-    header .upperHeader form input {
-        width: 350px;
-        height: 50px;
+    header .upperHeader .searchBar form input,
+    header .upperHeader .searchBar form button {
+        height: 55px;
     }
 
-    header .upperHeader form button {
-        height: 51px;
-        width: 55px;
-        color: #ebebeb;
+    header .upperHeader .searchBar form input {
+        border-radius: 10px;
+        width: 470px;
     }
 
     header .banner {
@@ -253,13 +258,45 @@ footer p {
         justify-content: space-around;
     }
 
-    header.nav-bar .right {
+
+    main section .product {
+        margin: 10px 10px;
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        width: 20vw;
+        height: 350px;
     }
 
-    header .nav-bar .left {
+    /* main section .product:hover {
+
+    } */
+
+    main section.BETUV {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main section .product img {
+        display: flex;
+        align-items: center;
+        width: inherit;
+    }
+
+
+    footer section.info{
+        margin: 30px 0;
         display: flex;
         flex-direction: row;
+        align-content: center;
+    }
+
+    footer section.info .icon:hover {
+        color: #79e68d;
+    }
+
+    footer h4{
+        display: flex;
+        justify-content: start;
+        align-items: end;
     }
 }
