@@ -37,35 +37,38 @@ header .banner {
     width: 100vw;
 }
 
-.searchBar {
+header form {
     display: flex;
     align-items: center;
-    padding: 20px;
+    width: 50%;
+    align-items: stretch;
+    padding: 2px;
+    font-size: 11px;
 }
 
-.searchBar button {
-    background-color: #ffffff;
-    height: 42px;
-    width: 45px;
-    margin: 0 -10px;
+header form input {
+    background-color: #FFF;
     border: none;
     outline: none;
-    border-radius: 5px;
-
+    color: #666;
+    width: 100%;
+    font-size: 1.3em;
+    border-radius: 10px 0 0 10px;
 }
 
-.searchBar input {
-    width: 185px;
-    height: 40px;
-    border-radius: 5px;
-    outline: none;
+header form button {
+    background-color: #FFF;
     border: none;
+    color: #666;
+    width: 10%;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
 }
 
 header .upperHeader {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 header .burguer-menu {
@@ -233,19 +236,18 @@ footer p {
         width: 200px;
     }
 
-    header .upperHeader .searchBar {
+    header .upperHeader form{
         display: flex;
         justify-content: center;
     }
 
-    header .upperHeader .searchBar form input,
-    header .upperHeader .searchBar form button {
+    header .upperHeader form input,
+    header .upperHeader form button {
         height: 55px;
     }
 
-    header .upperHeader .searchBar form input {
-        border-radius: 10px;
-        width: 470px;
+    header .upperHeader form input {
+        width: 570px;
     }
 
     header .banner {
@@ -267,13 +269,16 @@ footer p {
         height: 350px;
     }
 
-    /* main section .product:hover {
-
-    } */
+    main section .product:hover {
+        transition: box-shadow .3s;
+        top: 10px;
+        box-shadow: 0 0 11px #0000008c;
+    }
 
     main section.BETUV {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     main section .product img {
