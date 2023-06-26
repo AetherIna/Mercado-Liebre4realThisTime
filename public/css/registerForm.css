@@ -27,6 +27,7 @@ main .register-form form .right-side {
     border-radius: 10px;
     border: none;
     outline: none;
+    padding: 10px
  }
 
  main .register-form form .bottom .input input {
