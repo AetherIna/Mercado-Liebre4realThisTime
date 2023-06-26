@@ -26,7 +26,7 @@ header .text {
 
 header .logo {
     height: 100px;
-    width: 260px;
+    width: 50vw;
     display: flex;
     justify-content: start;
     align-items: start;
@@ -52,7 +52,7 @@ header form input {
     outline: none;
     color: #666;
     width: 100%;
-    height: 60px;
+    height: 45px;
     font-size: 1.3em;
     border-radius: 10px 0 0 10px;
 }
@@ -62,7 +62,7 @@ header form button {
     border: none;
     color: #666;
     width: 10%;
-    height: 60px;
+    height: 45px;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
 }
@@ -80,7 +80,7 @@ header .burguer-menu {
     align-items: center;
     color: #ebebeb;
     background-color: #1259c3;
-    margin: 35px 235px 35px;
+    margin: 35px 160px 35px;
     border-radius: 7px;
     height: 60px;
 }
@@ -272,7 +272,6 @@ footer p {
         display: flex;
         align-items: center;
         width: 20vw;
-        height: 350px;
     }
 
     main section .product:hover {
